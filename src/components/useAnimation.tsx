@@ -23,12 +23,13 @@ const useAnimation = ({container} : AnimationProps) => {
             duration : 1.45,
             ease : "power3.out"
         })
-        gsap.from(".navItems", {
+        gsap.from(".navItem", {
           y : -100,
           opacity: 0,
-          duration: 1.45,
+          duration: 0.75,
+          stagger : 0.05,
           ease: "power3.out",
-        });
+        }),"-=0.6";
     },{scope : container})
 }
 

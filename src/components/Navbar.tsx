@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div
       ref={containerRef}
-      className="border-b overflow-x-hidden px-4 cursor-pointer w-full border-white/10 h-14
+      className="border-b overflow-hidden px-4 cursor-pointer w-full border-white/10 h-20
   flex items-center justify-between 
   "
     >
@@ -34,18 +34,18 @@ const Navbar = () => {
         <h1 className="text-[14px]">NOVA</h1>
       </div>
 
-      <div className="navItems flex text-[14px] items-center justify-between gap-8">
+      <div className="navItems  flex text-[14px] items-center justify-between gap-8">
         {navItems.map((item) => (
-          <li className="list-none" key={item}>
+          <li className="navItem list-none" key={item}>
             {item}
           </li>
         ))}
       </div>
 
-      <div className="connect-letsTalk flex items-center gap-2">
+      <div className="connect-letsTalk  flex items-center gap-2">
         <span className="text-[14px]">Let's talk</span>
-        <button className="rounded-full border p-1 bg-accent text-background">
-          <MdOutlineArrowOutward size={12} />
+        <button className="rounded-full border p-1.5 bg-accent text-background">
+          <MdOutlineArrowOutward size={15} />
         </button>
       </div>
     </div>
